@@ -1,0 +1,298 @@
+body {
+  background-color: #f0fafa;
+  color: #8eb1cf;
+  font-weight: 400;
+}
+
+a:hover, .dropdown-item:hover {
+  color: #1ca893;
+}
+
+/* ---------------------------------- */
+/* Containers */
+/* ---------------------------------- */
+.container-fluid {
+  padding: 3% 5%;
+}
+
+.text-container {
+  margin: 5% 9%;
+}
+
+/* ---------------------------------- */
+/*Navigation Bar */
+/* ---------------------------------- */
+.navbar {
+  background-color: #f0fafa;
+  padding: 0 1.6rem;
+}
+
+.navbar-brand {
+  color: #169683;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  letter-spacing: 2.5px;
+  margin-right: 16;
+  padding: 0;
+}
+
+.nav-item {
+  margin-top: 55px;
+  padding: 0 3rem 0 5rem;
+}
+
+.nav-link {
+  color: #8eb1cf;
+  font-weight: 500;
+  padding-bottom: 0;
+}
+
+/* ---------------------------------- */
+/* Greeting/Heading Text */
+/* ---------------------------------- */
+.greeting-text {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.homepage-text-container {
+  padding: 15%;
+}
+
+/* ---------------------------------- */
+/* Paragraph Text Containers*/
+/* ---------------------------------- */
+.big-paragraph-text {
+  margin: 5% 0 7%;
+  font-size: 1.5rem;
+}
+
+.small-paragraph-text {
+  margin: 5% 0 7%;
+  font-size: 1.2rem;
+}
+
+/* ---------------------------------- */
+/* Featured Image Section */
+/* ---------------------------------- */
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(60%);
+  width: 30px;
+  height: 350px;
+}
+
+.featured-carousel {
+  margin: 0 30px;
+  text-align: center;
+}
+
+.carousel-inner {
+  height: 350px;
+  filter: drop-shadow(7px 7px 4px #99a8b2);
+}
+
+.featured-image {
+  height: 100%;
+  border-radius: 5%;
+}
+
+/* ---------------------------------- */
+/* About Page */
+/* ---------------------------------- */
+.profile-picture {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  margin: 7% 17% 17% 4%;
+}
+/* ---------------------------------- */
+/* Contact Page */
+/* ---------------------------------- */
+.contact-image {
+  margin-top: 10%;
+  border-radius: 5%;
+  max-width: 400px;
+  max-height: 450px;
+}
+
+.contact-me {
+  padding-top: 15%;
+}
+
+/* ---------------------------------- */
+/* Icons */
+/* ---------------------------------- */
+.icons {
+  color: #169683;
+  padding: 20px 50px 20px 0;
+  font-size: 2rem;
+}
+
+
+/* ---------------------------------- */
+/* Portfolio Page */
+/* ---------------------------------- */
+.portfolio-container {
+  padding: 3% 5%;
+}
+
+.portfolio-image {
+  margin-left: 1.6rem;
+  border-radius: 3%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Portfolio Image Columns */
+/* ---------------------------------- */
+.column {
+  flex: 23%;
+  max-width: 23%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Portfolio back-to-top button */
+/* ---------------------------------- */
+#back-to-top {
+  position: fixed;
+  bottom: 10%;
+  float: right;
+  right: 7%;
+  left: 93%;
+  max-width: 30px;
+  width: 100%;
+  font-size: 12px;
+  padding: .5px;
+  background-color: Transparent;
+  border: none;
+}
+
+/* ---------------------------------- */
+/* Footer section */
+/* ---------------------------------- */
+footer {
+  text-align: center;
+  margin-top: 18%;
+}
+
+.footer-copyright {
+  margin-top: 1.5%;
+}
+
+.icons-footer {
+  color: #8eb1cf;
+  margin: 5% 1.5%;
+  font-size: 1.5rem;
+}
+
+
+/* ---------------------------------- */
+/* Media Queries */
+/* ---------------------------------- */
+
+/* Media Query: Large Screens */
+/* ---------------------------------- */
+@media (min-width: 1390px) {
+  .container-fluid, .portfolio-container {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
+
+
+/* Media Query: Tablet*/
+/* ---------------------------------- */
+
+@media (max-width: 1200px) {
+  .nav-link, .nav-item {
+    text-align: right;
+    padding-left: 5px;
+    margin: 5px;
+  }
+
+  .section-align, h2, h3, h4 {
+    text-align: center;
+  }
+
+  .profile-picture {
+    margin: 5%;
+  }
+
+
+  .homepage-text-container {
+    text-align: center;
+  }
+
+  .small-paragraph-text {
+    text-align: left;
+  }
+
+  .column {
+    flex: 50%;
+    max-width: 45%;
+  }
+
+  .row {
+    margin: auto;
+  }
+
+  .featured-image {
+    max-width: 330px;
+    max-height: 300px;
+  }
+}
+
+/* Media Query: Mobile */
+/* ---------------------------------- */
+@media (max-width: 650px) {
+
+  .section-align {
+    text-align: center;
+  }
+  .navbar-brand {
+    text-align: left;
+  }
+
+  .nav-link, .nav-item {
+    text-align: right;
+    padding: 0;
+    margin: 2px;
+  }
+
+  .profile-picture {
+    margin: 2% 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .portfolio-image {
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .featured-image {
+    max-width: 330px;
+    max-height: 300px;
+  }
+
+}
+/* ---------------------------------- */
